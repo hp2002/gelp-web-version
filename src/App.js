@@ -1,10 +1,12 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import {useState} from 'react'
+import './style.css';
 
 export default function App() {
-  return (
-    <div>
-     
-    </div>
-  );
+  const [count, setCount] = useState(0);
+
+  return <div>
+    <p>{count}</p>
+    <button onClick={()=> setCount(count+1)}> Increment </button>
+  </div>;
 }
