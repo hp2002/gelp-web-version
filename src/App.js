@@ -8,9 +8,9 @@ export default function App() {
 
   return (
     <div>
-      <p>{count}</p>
-      <input type="text"></input>
-      <button type="submit" onClick={() => setInputText()}>
+      <p>{inputText}</p>
+      <input type="text" onChange ={()=> setInputText(inputText)}></input>
+      <button type="submit">
         Submit
       </button>
     </div>
